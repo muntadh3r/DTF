@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# ===== Top-level imports (no indentation) =====
 import subprocess
 import os
 import time
@@ -14,6 +15,7 @@ from datetime import datetime
 import tensorflow as tf
 from tensorflow.keras import layers
 from flask import Flask, request, jsonify
+import pymavlink as mavlink  # <-- This line MUST be flush left (no indentation)
 from matplotlib import pyplot as plt
 import math
 import logging
